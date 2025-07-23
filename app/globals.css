@@ -29,3 +29,11 @@ body {
 .nav-item {
   @apply px-3 py-1.5 rounded-full font-semibold text-white/70 hover:bg-white/20 transition duration-300;
 }
+
+.btn-secondary {
+  @apply px-5 py-3 rounded-full bg-primary-dark border border-primary-light text-primary-light font-medium hover:bg-primary-light/10 hover:text-secondary-light transition duration-300;
+}
+
+.btn-primary {
+  @apply px-5 py-3 rounded-full bg-primary-light border border-primary-light text-primary-dark font-medium hover:bg-primary-light/30 hover:text-secondary-light transition duration-300;
+}
