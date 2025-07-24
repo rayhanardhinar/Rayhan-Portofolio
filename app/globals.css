@@ -31,9 +31,9 @@ body {
 }
 
 .btn-secondary {
-  @apply px-5 py-3 rounded-full bg-primary-dark border border-primary-light text-primary-light font-medium hover:bg-primary-light/10 hover:text-secondary-light transition duration-300;
+  @apply px-5 py-3 rounded-lg bg-transparent border border-primary-light text-primary-light font-medium hover:bg-primary-light/10 hover:text-secondary-light transition duration-300;
 }
 
 .btn-primary {
-  @apply px-5 py-3 rounded-full bg-primary-light border border-primary-light text-primary-dark font-medium hover:bg-primary-light/30 hover:text-secondary-light transition duration-300;
+  @apply px-5 py-3 rounded-lg bg-primary-light border border-primary-light text-primary-dark font-medium hover:bg-primary-light/60 hover:text-secondary-light transition duration-300;
 }

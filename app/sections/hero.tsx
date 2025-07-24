@@ -2,16 +2,17 @@
 import { FaLaptop } from "react-icons/fa";
 import { MdOutlineTouchApp } from "react-icons/md";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-4 py-28">
-      <div className="container mx-auto">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-36 md:py-40 lg:py-54 px-6">
+      <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
+      <div className="container z-10">
         <div className="text-center md:text-left px-2 tracking-wide">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-secondary-light">
             Hello, I'm <br />
             <span className="text-primary-light"> Rayhan Ardhinar</span>
           </h1>
-          <p className="font-light text-sm md:text-lg">
+          <p className="font-light/50 text-secondary-light text-sm md:text-lg">
             <span className="text-primary-light font-semibold">
               Frontend Developer
             </span>{" "}
@@ -30,9 +31,6 @@ export default function HeroSection() {
             <MdOutlineTouchApp className="text-xl" />
           </button>
         </div>
-      </div>
-      <div className="container mx-auto">
-        <div>Hello</div>
       </div>
     </div>
   );
