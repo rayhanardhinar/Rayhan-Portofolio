@@ -9,10 +9,10 @@ export default function Header() {
           Home
         </a>
         <a href="" className="nav-item">
-          Projects
+          About
         </a>
         <a href="" className="nav-item">
-          About
+          Projects
         </a>
         <a href="" className="nav-item">
           Contact

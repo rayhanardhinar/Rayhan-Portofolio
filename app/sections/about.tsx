@@ -26,7 +26,6 @@ export default function About() {
             as a developer and as a professional in the evolving tech landscape.
           </p>
         </div>
-        <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
 
         <div className="flex flex-col md:flex-row gap-4 pt-20">
           <div className="flex-1">
@@ -43,6 +42,7 @@ export default function About() {
             <EduTimeline />
             <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] top-[2000px] right-[120px] md:top-[1400px] md:right-[280px] z-0"></div>
           </div>
+          <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
         </div>
       </div>
     </div>
