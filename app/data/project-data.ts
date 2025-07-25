@@ -3,6 +3,7 @@ export interface ProjectData {
   title: string;
   image: string;
   description: string;
+  tech: string[];
 }
 
 export const projectList: ProjectData[] = [
@@ -12,6 +13,7 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
     description: "A responsive landing page for modern furniture brands.",
+    tech: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1770&q=80",
     description: "An intuitive UI/UX for ordering food in a foodcourt.",
+    tech: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1770&q=80",
     description: "Admin dashboard for inventory management with Laravel.",
+    tech: ["Laravel", "Tailwind CSS"],
   },
   {
     id: 4,
@@ -33,6 +37,7 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
     description: "A responsive landing page for modern furniture brands.",
+    tech: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 5,
@@ -40,6 +45,7 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1770&q=80",
     description: "An intuitive UI/UX for ordering food in a foodcourt.",
+    tech: ["Next.js", "Tailwind CSS"],
   },
   {
     id: 6,
@@ -47,5 +53,6 @@ export const projectList: ProjectData[] = [
     image:
       "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1770&q=80",
     description: "Admin dashboard for inventory management with Laravel.",
+    tech: ["Laravel", "Tailwind CSS"],
   },
 ];

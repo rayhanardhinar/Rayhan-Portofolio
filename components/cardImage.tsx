@@ -1,16 +1,18 @@
 // CardImage.tsx
-import { Button, Card, Image, Text } from "@chakra-ui/react";
+import { Button, Card, Image } from "@chakra-ui/react";
 
 interface CardImageProps {
   title: string;
   image: string;
   description: string;
+  tech: string[];
 }
 
 export default function CardImage({
   title,
   image,
   description,
+  tech,
 }: CardImageProps) {
   return (
     <Card.Root
@@ -26,8 +28,13 @@ export default function CardImage({
         </Card.Description>
       </Card.Body>
       <Card.Footer gap="2">
-        <Button className="btn-primary">Live view</Button>
-        <Button className="btn-secondary">Add to cart</Button>
+        <div className="flex flex-wrap gap-2">
+          {tech.map((item, index) => (
+            <Button key={index} className="btn-secondary !rounded-full">
+              {item}
+            </Button>
+          ))}
+        </div>
       </Card.Footer>
     </Card.Root>
   );
