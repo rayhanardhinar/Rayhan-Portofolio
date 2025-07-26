@@ -17,9 +17,9 @@ export default function Hero() {
             <span className="text-primary-light font-semibold">
               Web Developer
             </span>{" "}
-            with a passion about creating intuitive user interfaces and
-            impactful web experiences. Open for collaboration, freelance work,
-            or exciting projects.
+            dedicated to creating intuitive interfaces and delivering engaging,
+            user-centered web experiences. Open to collaborations, freelance
+            engagements, and innovative projects.
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 mt-8">

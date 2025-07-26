@@ -27,20 +27,25 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 pt-20">
-          <div className="flex-1">
-            <h1 className="text-3xl font-bold mb-4 text-secondary-light">
-              Work Experience
-            </h1>
-            <WorkTimeline />
+        <div className="flex flex-col md:flex-row md:px-20 gap-20 justify-center pt-20">
+          <div className="flex flex-col flex-1">
+            <div className="flex flex-col">
+              <h1 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-light">
+                <span className="text-primary-light">Work</span> Experience
+              </h1>
+              <WorkTimeline />
+            </div>
           </div>
 
-          <div className="flex-1">
-            <h1 className="text-3xl font-bold mb-4 text-secondary-light">
-              Education Background
-            </h1>
-            <EduTimeline />
-            <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] top-[2000px] right-[120px] md:top-[1400px] md:right-[280px] z-0"></div>
+          <div className="flex flex-col flex-1">
+            <div className="flex flex-col">
+              <h1 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-light">
+                <span className="text-primary-light">Educational</span>{" "}
+                Background
+              </h1>
+              <EduTimeline />
+            </div>
+            <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] top-[2300px] right-[80px] md:top-[1800px] md:right-[280px] z-0"></div>
           </div>
           <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
         </div>

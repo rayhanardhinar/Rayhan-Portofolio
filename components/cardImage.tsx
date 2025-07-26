@@ -8,6 +8,18 @@ interface CardImageProps {
   tech: string[];
 }
 
+const techColorMap: Record<string, string> = {
+  "Next.js": "bg-black text-white",
+  Tailwind: "bg-blue-400 text-white",
+  Bootstrap: "bg-purple-500 text-white",
+  Laravel: "bg-red-500 text-white",
+  React: "bg-cyan-500 text-white",
+  Vue: "bg-green-500 text-white",
+  JavaScript: "bg-yellow-400 text-black",
+  HTML: "bg-orange-500 text-white",
+  CSS: "bg-blue-600 text-white",
+};
+
 export default function CardImage({
   title,
   image,
@@ -31,7 +43,12 @@ export default function CardImage({
       <Card.Footer gap="2">
         <div className="flex flex-wrap gap-2">
           {tech.map((item, index) => (
-            <Button key={index} className="btn-secondary !rounded-full">
+            <Button
+              key={index}
+              className={`!rounded-full !text-sm px-4 py-2 border border-white/40 ${
+                techColorMap[item] || "bg-gray-400 text-white"
+              }`}
+            >
               {item}
             </Button>
           ))}
