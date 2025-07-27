@@ -1,16 +1,16 @@
-import CardImage from "@/components/projectCard";
+import ProjectCardImage from "@/components/projectCard";
 import { projectList } from "../data/project-data";
 
 export default function Project() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 pb-20 max-w-7xl mx-auto px-8">
-      <h2 className="text-3xl font-bold mb-4 text-secondary-light text-center">
+      <h2 className="text-3xl md:text-5xl font-bold mb-12 text-secondary-light text-center">
         See how I turn <span className="text-primary-light">Ideas</span> into a{" "}
         <span className="text-primary-light">Real Digital Products</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {projectList.map((project) => (
-          <CardImage
+          <ProjectCardImage
             key={project.id}
             title={project.title}
             image={project.image}

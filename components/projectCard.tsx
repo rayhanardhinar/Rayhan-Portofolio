@@ -31,7 +31,7 @@ const techIconMap: Record<string, JSX.Element> = {
   PHP: <SiPhp className="w-5 h-5 text-blue-500" />,
 };
 
-export default function CardImage({
+export default function ProjectCardImage({
   title,
   image,
   description,
