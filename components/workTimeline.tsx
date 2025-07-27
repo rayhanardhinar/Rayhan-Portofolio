@@ -30,7 +30,11 @@ export default function WorkTimeline() {
             has met the requirements to carry out professional certification
             activities.
           </TimelineBody>
-          <a href="https://lsp.um.ac.id/" target="_blank">
+          <a
+            href="https://lsp.um.ac.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="flex items-center btn-secondary !px-3 !py-1.5">
               Visit Company
               <HiArrowNarrowRight className="ml-2 h-3 w-3" />
@@ -54,7 +58,11 @@ export default function WorkTimeline() {
             standards and contribute to strengthening the digital economy
             ecosystem.
           </TimelineBody>
-          <a href="https://www.dicoding.com/" target="_blank">
+          <a
+            href="https://www.dicoding.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="flex items-center btn-secondary !px-3 !py-1.5">
               Visit Company
               <HiArrowNarrowRight className="ml-2 h-3 w-3" />

@@ -27,7 +27,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row md:px-20 gap-20 justify-center pt-20">
+        <div className="flex flex-col md:flex-row md:px-20 gap-10 md:gap-20 justify-center pt-20">
           <div className="flex flex-col flex-1">
             <div className="flex flex-col">
               <h1 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-light">
@@ -47,6 +47,14 @@ export default function About() {
             </div>
             <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] top-[2300px] right-[80px] md:top-[1800px] md:right-[280px] z-0"></div>
           </div>
+          <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
+        </div>
+        <div className="flex flex-col md:flex-row md:px-20 gap-10 md:gap-20 justify-center pt-20">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-light">
+            These Certifications Validate My Commitment to Excellence and Growth
+            in Web Development.
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
           <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
         </div>
       </div>

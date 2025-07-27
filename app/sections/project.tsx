@@ -1,4 +1,4 @@
-import CardImage from "@/components/cardImage";
+import CardImage from "@/components/projectCard";
 import { projectList } from "../data/project-data";
 
 export default function Project() {
@@ -16,6 +16,7 @@ export default function Project() {
             image={project.image}
             description={project.description}
             tech={project.tech}
+            link={project.link}
           />
         ))}
       </div>
