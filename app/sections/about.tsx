@@ -56,7 +56,7 @@ export default function About() {
             a <span className="text-primary-light">Step Forward</span> in My Web
             Development Journey.
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lazy">
             {certificationList.map((certification) => (
               <CertificationCardImage
                 key={certification.id}

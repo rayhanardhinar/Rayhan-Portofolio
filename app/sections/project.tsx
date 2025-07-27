@@ -8,7 +8,7 @@ export default function Project() {
         See how I turn <span className="text-primary-light">Ideas</span> into a{" "}
         <span className="text-primary-light">Real Digital Products</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projectList.map((project) => (
           <ProjectCardImage
             key={project.id}

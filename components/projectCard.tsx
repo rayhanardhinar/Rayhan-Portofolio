@@ -67,6 +67,7 @@ export default function ProjectCardImage({
       </Card.Footer>
 
       <Image
+        loading="lazy"
         src={image}
         alt={title}
         className="m-5 rounded-[10px] border border-primary-light shadow-[0_0_70px_1px] shadow-primary-light/50"
