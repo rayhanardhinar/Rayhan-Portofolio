@@ -53,8 +53,8 @@ export default function About() {
         <div className="flex flex-col gap-10 justify-center items-center pt-20">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
             Each <span className="text-primary-light">Certification</span> Marks
-            a <span className="text-primary-light">Step Forward</span> in My Web
-            Development Journey.
+            a <span className="text-primary-light">Step Forward</span> in My{" "}
+            <span className="text-primary-light">Web Development Journey</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lazy">
             {certificationList.map((certification) => (
