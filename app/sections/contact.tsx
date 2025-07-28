@@ -4,8 +4,11 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <>
-      <div className="flex flex-col items-center justify-center gap-4 pb-20 max-w-7xl mx-auto px-8">
+    <div
+      className="flex flex-col items-center justify-center gap-4 pb-20 max-w-7xl mx-auto px-8 min-h-screen"
+      id="contact"
+    >
+      <div className="z-20">
         <h2 className="text-3xl md:text-5xl font-bold mb-12 text-secondary-light text-center">
           Ready to <span className="text-primary-light">Collaborate?</span> I'd
           Love to Hear From <span className="text-primary-light">You</span>
@@ -54,14 +57,14 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col flex-1 items-center ">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-light">
+          <div className="flex flex-col flex-1 items-center bg-primary-light rounded-3xl p-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary-dark">
               Send me a message
             </h2>
             <ContactForm />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

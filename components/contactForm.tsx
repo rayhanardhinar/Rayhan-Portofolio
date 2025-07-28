@@ -5,31 +5,36 @@ export default function ContactForm() {
     <Fieldset.Root size="md" maxW="lg">
       <Fieldset.Content>
         <Field.Root>
-          <Field.Label>Name</Field.Label>
-          <Input name="name" className="bg-primary-light/20 px-2 rounded-lg" />
+          <Field.Label className="text-primary-dark">Name</Field.Label>
+          <Input name="name" className="bg-primary-dark/20 px-2 rounded-lg" />
         </Field.Root>
 
         <Field.Root>
-          <Field.Label>Email address</Field.Label>
+          <Field.Label className="text-primary-dark">Email address</Field.Label>
           <Input
             name="email"
             type="email"
-            className="bg-primary-light/20 px-2 rounded-lg"
+            className="bg-primary-dark/20 px-2 rounded-lg"
           />
         </Field.Root>
 
         <Field.Root>
-          <Field.Label>What can I help you with?</Field.Label>
+          <Field.Label className="text-primary-dark">
+            What can I help you with?
+          </Field.Label>
           <Textarea
             name="text"
-            className="bg-primary-light/20 px-2 rounded-lg"
+            className="bg-primary-dark/20 px-2 rounded-lg"
             rows={4}
           />
         </Field.Root>
 
         <Field.Root className="pt-4">
-          <Button type="submit" className="btn-primary w-full ">
-            Submit
+          <Button
+            type="submit"
+            className="bg-primary-dark rounded-lg text-primary-light w-full hover:bg-primary-dark/70 hover:text-primary-dark"
+          >
+            Send
           </Button>
         </Field.Root>
       </Fieldset.Content>

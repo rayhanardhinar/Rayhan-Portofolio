@@ -42,7 +42,7 @@ export default function ProjectCardImage({
     <Card.Root
       maxW="sm"
       overflow="hidden"
-      className="border border-primary-light bg-transparent rounded-3xl shadow-[0_0_70px_1px] shadow-primary-light/50 text-primary-light"
+      className="border border-primary-light bg-primary-dark rounded-3xl shadow-[0_0_70px_1px] shadow-primary-light/50 text-primary-light "
     >
       <Card.Body gap="2">
         <Card.Title className="font-bold text-xl text-secondary-light">

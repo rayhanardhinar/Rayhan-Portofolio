@@ -26,8 +26,17 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .nav-item {
-  @apply px-3 py-1.5 rounded-full font-semibold text-white/70 hover:bg-white/20 transition duration-300;
+  @apply px-4 py-1.5 rounded-full text-white text-sm transition-all duration-200;
+}
+.nav-item:hover {
+  @apply bg-white text-black;
+}
+.nav-item.active {
+  @apply bg-white text-black;
 }
 
 .btn-secondary {
@@ -36,4 +45,17 @@ body {
 
 .btn-primary {
   @apply px-5 py-3 rounded-lg bg-primary-light border border-primary-light text-primary-dark font-medium hover:bg-primary-light/60 hover:text-secondary-light transition duration-300;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
 }

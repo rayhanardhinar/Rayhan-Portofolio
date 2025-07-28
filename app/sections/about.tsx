@@ -5,8 +5,11 @@ import { certificationList } from "../data/certification-data";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 pb-32 max-w-7xl mx-auto px-8">
-      <div className="tracking-wide">
+    <div
+      className="flex flex-col items-center justify-center gap-4 pb-32 max-w-7xl mx-auto px-8"
+      id="about"
+    >
+      <div className="tracking-wide z-20">
         <h1 className="text-3xl md:text-5xl md:text-left font-bold mb-8 text-center">
           Adaptive <span className="text-primary-light">Web Developer</span>{" "}
           with a <span className="text-primary-light">Growth Mindset</span>

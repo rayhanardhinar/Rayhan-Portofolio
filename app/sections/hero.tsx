@@ -4,7 +4,10 @@ import { MdOutlineTouchApp } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-36 md:py-40 lg:py-54 max-w-7xl mx-auto px-4 md:px-8 min-h-screen">
+    <div
+      className="flex flex-col md:flex-row items-center justify-center gap-4 py-36 md:py-40 lg:py-54 max-w-7xl mx-auto px-4 md:px-8 min-h-screen"
+      id="hero"
+    >
       <div className="absolute border border-secondary-light rounded-full w-40 h-40 bg-primary-light shadow-2xl blur-[120px] z-0"></div>
       <div className="z-10">
         <div className="text-center md:text-left px-2 tracking-wide">
