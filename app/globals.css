@@ -30,13 +30,13 @@ html {
   scroll-behavior: smooth;
 }
 .nav-item {
-  @apply px-4 py-1.5 rounded-full text-white text-sm transition-all duration-200;
+  @apply px-4 py-2 rounded-full text-white font-semibold text-sm transition-all duration-200;
 }
 .nav-item:hover {
-  @apply bg-white text-black;
+  @apply bg-primary-light/40 text-white;
 }
 .nav-item.active {
-  @apply bg-white text-black;
+  @apply bg-primary-light text-black;
 }
 
 .btn-secondary {

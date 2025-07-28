@@ -5,7 +5,7 @@ import ScrollTech from "@/components/scrollTech";
 export default function Project() {
   return (
     <div
-      className="flex flex-col items-center justify-center gap-4 pb-20 max-w-7xl mx-auto px-8"
+      className="flex flex-col items-center justify-center gap-4 pb-20 max-w-7xl mx-auto px-8 scroll-mt-20"
       id="projects"
     >
       <h2 className="text-3xl md:text-5xl font-bold text-secondary-light text-center z-20">

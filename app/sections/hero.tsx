@@ -3,6 +3,12 @@ import { FaLaptop } from "react-icons/fa";
 import { MdOutlineTouchApp } from "react-icons/md";
 
 export default function Hero() {
+  const handleScrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <div
       className="flex flex-col md:flex-row items-center justify-center gap-4 py-36 md:py-40 lg:py-54 max-w-7xl mx-auto px-4 md:px-8 min-h-screen"
@@ -26,11 +32,18 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 mt-8">
-          <button className="flex items-center gap-2 btn-secondary">
+          <button
+            className="flex items-center gap-2 btn-secondary"
+            onClick={() => handleScrollTo("projects")}
+          >
             <span>See my Projects</span>
             <FaLaptop />
           </button>
-          <button className="flex items-center gap-2 btn-primary">
+
+          <button
+            className="flex items-center gap-2 btn-primary"
+            onClick={() => handleScrollTo("contact")}
+          >
             <span>Contact Me</span>
             <MdOutlineTouchApp className="text-xl" />
           </button>

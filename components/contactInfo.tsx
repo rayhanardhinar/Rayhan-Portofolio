@@ -10,7 +10,10 @@ export default function ContactInfo() {
   return (
     <DataList.Root>
       {stats.map((item) => (
-        <DataList.Item key={item.label}>
+        <DataList.Item
+          key={item.label}
+          className="flex flex-col items-center md:items-start"
+        >
           <DataList.ItemLabel>{item.label}</DataList.ItemLabel>
           <DataList.ItemValue>{item.value}</DataList.ItemValue>
         </DataList.Item>

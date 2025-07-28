@@ -11,36 +11,45 @@ export default function Header() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = navItems.map(({ id }) => document.getElementById(id));
-      const navLinks = navItems.map(({ id }) =>
-        document.querySelector(`a[href="#${id}"]`)
-      );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const navLink = document.querySelector(
+            `a[href="#${entry.target.id}"]`
+          );
+          if (navLink) {
+            if (entry.isIntersecting) {
+              navLink.classList.add("active");
+            } else {
+              navLink.classList.remove("active");
+            }
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      }
+    );
 
-      sections.forEach((section, i) => {
-        const navLink = navLinks[i];
+    navItems.forEach(({ id }) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
 
-        if (section && navLink) {
-          const rect = section.getBoundingClientRect();
-          const isActive =
-            rect.top <= window.innerHeight / 2 &&
-            rect.bottom >= window.innerHeight / 2;
-
-          navLink.classList.toggle("active", isActive);
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // jalankan sekali di awal agar aktif langsung
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => observer.disconnect();
   }, []);
 
   const scrollToSection = (id: string) => {
+    const yOffset = -80;
     const section = document.getElementById(id);
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
