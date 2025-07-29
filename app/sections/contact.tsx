@@ -9,14 +9,22 @@ export default function Contact() {
       id="contact"
     >
       <div className="z-20">
-        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-secondary-light text-center">
+        <h2
+          className="text-3xl md:text-5xl font-bold mb-12 text-secondary-light text-center"
+          data-aos="zoom-in-up"
+          data-aos-delay="0"
+        >
           Ready to <span className="text-primary-light">Collaborate?</span> I'd
           Love to Hear From <span className="text-primary-light">You</span>
         </h2>
 
         <div className="w-full flex flex-col md:flex-row items-stretch justify-center gap-8">
           {/* Left Info */}
-          <div className="flex flex-col flex-1 justify-between items-center md:items-start gap-8">
+          <div
+            className="flex flex-col flex-1 justify-between items-center md:items-start gap-8"
+            data-aos="zoom-in-right"
+            data-aos-delay="100"
+          >
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-secondary-light mb-4">
                 Contact Information
@@ -58,7 +66,11 @@ export default function Contact() {
           </div>
 
           {/* Right Form */}
-          <div className="flex-1 rounded-3xl bg-primary-light/80 backdrop-blur-sm shadow-inner p-8 md:p-10">
+          <div
+            className="flex-1 rounded-3xl bg-primary-light/80 backdrop-blur-sm shadow-inner p-8 md:p-10"
+            data-aos="zoom-in-left"
+            data-aos-delay="100"
+          >
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary-dark text-center">
               Send me a message
             </h3>

@@ -16,7 +16,7 @@ export default function WorkTimeline() {
     <Timeline>
       <TimelineItem>
         <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
+        <TimelineContent data-aos="zoom-in-right" data-aos-delay="200">
           <TimelineTime>May 2024 - January 2025</TimelineTime>
           <TimelineTitle>LSP P-1 UM</TimelineTitle>
           <TimelineBody className="text-sm !text-secondary-light">
@@ -42,9 +42,10 @@ export default function WorkTimeline() {
           </a>
         </TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
+        <TimelineContent data-aos="zoom-in-right" data-aos-delay="400">
           <TimelineTime>February 2024 - August 2024</TimelineTime>
           <TimelineTitle>Dicoding BDT 2024 Bootcamp</TimelineTitle>
           <TimelineBody className="text-sm !text-secondary-light">
@@ -70,9 +71,10 @@ export default function WorkTimeline() {
           </a>
         </TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
+        <TimelineContent data-aos="zoom-in-right" data-aos-delay="600">
           <TimelineTime>April 2024 - July 2024</TimelineTime>
           <TimelineTitle>Food.Co</TimelineTitle>
           <TimelineBody className="text-sm !text-secondary-light">

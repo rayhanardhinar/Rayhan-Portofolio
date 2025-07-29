@@ -16,7 +16,7 @@ export default function EduTimeline() {
     <Timeline>
       <TimelineItem>
         <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
+        <TimelineContent data-aos="zoom-in-left" data-aos-delay="200">
           <TimelineTime>August 2021 - January 2025</TimelineTime>
           <TimelineTitle>Universitas Negeri Malang</TimelineTitle>
           <TimelineBody className="text-sm !text-secondary-light">
@@ -27,7 +27,7 @@ export default function EduTimeline() {
       </TimelineItem>
       <TimelineItem>
         <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
+        <TimelineContent data-aos="zoom-in-left" data-aos-delay="400">
           <TimelineTime>July 2018 - July 2021</TimelineTime>
           <TimelineTitle>SMA Nahdlatul Ulama 1 Gresik</TimelineTitle>
           <TimelineBody className="text-sm !text-secondary-light">
