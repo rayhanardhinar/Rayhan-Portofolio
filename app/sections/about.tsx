@@ -6,7 +6,7 @@ import { certificationList } from "../data/certification-data";
 export default function About() {
   return (
     <div
-      className="flex flex-col items-center justify-center gap-4 pb-32 max-w-7xl mx-auto px-8 min-h-screen"
+      className="flex flex-col items-center justify-center gap-4 pb-32 max-w-7xl mx-auto px-8"
       id="about"
     >
       <div className="tracking-wide z-20">
@@ -84,7 +84,11 @@ export default function About() {
             a <span className="text-primary-light">Step Forward</span> in My{" "}
             <span className="text-primary-light">Web Development Journey</span>
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lazy">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lazy"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             {certificationList.map((certification) => (
               <CertificationCardImage
                 key={certification.id}

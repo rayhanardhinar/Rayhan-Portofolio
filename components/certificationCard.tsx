@@ -18,8 +18,6 @@ export default function CertificationCardImage({
       maxW="sm"
       overflow="hidden"
       className="border border-primary-light bg-primary-dark rounded-3xl shadow-[0_0_70px_1px] shadow-primary-light/50 text-primary-light"
-      data-aos="fade-up"
-      data-aos-delay="400"
     >
       <Card.Body gap="2">
         <Card.Title className="font-bold text-xl text-secondary-light">

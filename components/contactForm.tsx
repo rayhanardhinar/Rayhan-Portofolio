@@ -1,25 +1,57 @@
 "use client";
 
+import { useState } from "react";
 import { Button, Field, Fieldset, Input, Textarea } from "@chakra-ui/react";
 import { toaster } from "@/components/ui/toaster";
 import { FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [buttonText, setButtonText] = useState("Send Message");
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
 
-    // Di sini kamu bisa lakukan pengiriman data ke email/API, dst.
-    // Misalnya: emailjs/sendGrid/fetch ke server kamu
+    setIsLoading(true);
+    setButtonText("Sending...");
 
-    toaster.create({
-      type: "success",
-      title: "Message sent.",
-      description: "I'll be back to you soon!",
-      duration: 5000,
-    });
+    try {
+      await emailjs.sendForm(
+        "service_ytg44wa",
+        "template_0mk26jw",
+        form,
+        "2HhYQlqtS1mTXcxsO"
+      );
 
-    // Optionally reset form
-    e.currentTarget.reset();
+      setButtonText("Message Sent!");
+
+      toaster.create({
+        type: "success",
+        title: "Message sent.",
+        description: "I'll be back to you soon!",
+        duration: 5000,
+      });
+
+      form.reset();
+    } catch (error: any) {
+      setButtonText("Failed to Send");
+
+      toaster.create({
+        type: "error",
+        title: "Failed to send.",
+        description: "Something went wrong. Please try again.",
+        duration: 5000,
+      });
+
+      console.error("Email send error:", error?.text || error);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+        setButtonText("Send Message");
+      }, 3000); // Delay 3 detik
+    }
   };
 
   return (
@@ -75,9 +107,13 @@ export default function ContactForm() {
           <Field.Root className="pt-2">
             <Button
               type="submit"
+              loading={isLoading}
+              loadingText="Sending..."
+              spinnerPlacement="start"
+              colorScheme="blue"
               className="bg-primary-dark text-primary-light font-semibold w-full py-2 rounded-lg transition-all duration-300 hover:bg-primary-dark/80 hover:text-white shadow-md"
             >
-              Send Message
+              {buttonText}
             </Button>
           </Field.Root>
         </Fieldset.Content>
