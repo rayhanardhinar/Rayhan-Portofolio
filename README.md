@@ -27,7 +27,7 @@ This website showcases my projects, skills, and experiences in **Web Development
 ---
 
 ## 🌍 Live Demo
-![Portfolio Preview](https://rayhan-portofolio-nine.vercel.app/)
+[Portfolio Preview](https://rayhan-portofolio-nine.vercel.app/)
 
 ---
 
